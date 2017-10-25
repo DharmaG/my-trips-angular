@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { TripsComponent } from './pages/trips/trips.component';
+import { TripFormComponent } from './pages/trip-form/trip-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    TripsComponent
+    TripsComponent,
+    TripFormComponent
   ],
   imports: [
     BrowserModule,
