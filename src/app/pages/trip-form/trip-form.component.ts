@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { TripInfo } from '../../interfaces/trip-info';
+import { TripsApiService } from '../../services/trips-api.service';
 
 @Component({
   selector: 'app-trip-form',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripFormComponent implements OnInit {
 
-  constructor() { }
+  newTrip = {};
+
+
+  @Output() newTrips = new EventEmitter();
+
+  constructor(
+    private tripService: TripsApiService
+  ) { }
 
   ngOnInit() {
+  }
+
+  saveNewTrip() {
+    this.tripService.postTrip(this.newTrip)
   }
 
 }

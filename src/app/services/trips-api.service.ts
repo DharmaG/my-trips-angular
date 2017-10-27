@@ -20,4 +20,19 @@ export class TripsApiService {
     );
   }
 
+  postTrip(tripFields: TripInfo) {
+    return this.http.post(
+      this.baseUrl + '/api/trips',
+      tripFields,
+      { withCredentials:true }
+    );
+  }
+
+  deleteTrip(tripId: string) {
+    return this.http.delete(
+      this.baseUrl + '/api/trips/' + tripId,
+      { withCredentials: true }
+    );
+  }
+
 }
