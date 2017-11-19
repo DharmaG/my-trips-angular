@@ -9,7 +9,7 @@ import { TripsApiService } from '../../services/trips-api.service';
 })
 export class TripFormComponent implements OnInit {
 
-  newTrip = {};
+  newTrip: any = {};
 
 
   @Output() newTrips = new EventEmitter();
@@ -23,6 +23,11 @@ export class TripFormComponent implements OnInit {
 
   saveNewTrip() {
     this.tripService.postTrip(this.newTrip)
+    .subscribe(
+      (trip) => {
+        this.newTrip.push(trip)
+      }
+    );
   }
 
 }
