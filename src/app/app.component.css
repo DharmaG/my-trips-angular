@@ -16,5 +16,9 @@
 
 .family-pic {
   background-image: url(./photos/familyphoto.jpg);
+  min-height: 600px;
+
+  background-attachment: fixed;
   background-size: auto;
+  background-size: cover;
 }
