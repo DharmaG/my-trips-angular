@@ -11,5 +11,10 @@
 .practice {
   height: 500px;
   background-color: rgba(255, 0, 0, 0.5);
+  margin-top: 0px;
+}
 
+.family-pic {
+  background-image: url(./photos/familyphoto.jpg);
+  background-size: auto;
 }
