@@ -1,3 +1,4 @@
+
 .parallax {
   background-image: url(./photos/trip-hand.jpg);
   min-height: 900px;
@@ -9,16 +10,26 @@
 }
 
 .practice {
-  height: 500px;
-  background-color: rgba(255, 0, 0, 0.5);
-  margin-top: 0px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .family-pic {
   background-image: url(./photos/familyphoto.jpg);
-  min-height: 600px;
+  min-height: 900px;
 
   background-attachment: fixed;
   background-size: auto;
   background-size: cover;
+}
+
+h1 {
+  padding-top: 30%;
+  font-size: 60px;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 5%;
 }
