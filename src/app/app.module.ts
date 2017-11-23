@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { TripsComponent } from './pages/trips/trips.component';
 import { TripFormComponent } from './pages/trip-form/trip-form.component';
+import { ScrollspyComponent } from './pages/scrollspy/scrollspy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     TripsComponent,
-    TripFormComponent
+    TripFormComponent,
+    ScrollspyComponent
   ],
   imports: [
     BrowserModule,
